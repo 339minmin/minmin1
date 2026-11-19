@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>minmin — Beyond the Prompt / AIGC & Visual Portfolio</title>
+  <meta name="description" content="张珉源的AIGC项目、投放成果、标准化工作流、千川剪辑实践与独立创作作品。">
+  <link rel="stylesheet" href="styles.css"><script defer src="app.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div><div id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="#top" class="wordmark" aria-label="minmin 回到顶部">minmin<span class="star">✳</span></a>
+    <nav aria-label="主导航">
+      <a href="#about">00 ABOUT</a><a href="#performance">01 PERFORMANCE</a><a href="#creative">02 CREATIVE</a><a href="#workflow">03 WORKFLOW</a><a href="#growth">04 GROWTH</a><a href="#beyond">05 BEYOND</a>
+    </nav>
+    <button class="header-menu" id="menu-button" aria-expanded="false" aria-controls="mobile-nav">MENU +</button>
+  </header>
+  <div id="mobile-nav" class="mobile-nav" hidden><a href="#about">ABOUT</a><a href="#performance">PERFORMANCE</a><a href="#creative">CREATIVE</a><a href="#workflow">WORKFLOW</a><a href="#growth">GROWTH</a><a href="#beyond">BEYOND</a></div>
+
+  <main>
+    <section id="top" class="hero section-dark">
+      <div class="hero-meta mono"><span>ZHANG MINYUAN / 张珉源</span><span>AIGC TRAINING PROGRAM · 2026</span><span>PROBATION REVIEW</span></div>
+      <div class="hero-grid">
+        <div class="hero-words"><p class="micro-label">FROM EXECUTION TO CREATION</p><h1>BEYOND<br><em>THE</em><br>PROMPT<span>.</span></h1><div class="hero-subline"><span>不止于生成</span><span>从高效执行到独立创作</span></div><a href="#performance" class="green-button">EXPLORE THE WORK <span>↓</span></a></div>
+        <div class="hero-visual"><img src="assets/hero-portrait.jpg" alt="minmin 汇报原稿中的黑白人物摄影与视觉拼贴" /><div class="visual-stamp">VISUAL / AIGC<br>CREATIVE × BUSINESS</div><span class="hero-corner">ABOUT / MINMIN<br>2026</span></div>
+      </div>
+      <div class="hero-bottom"><span>DESIGNER / AIGC CREATOR / EDITOR</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="about-spread" id="about" aria-label="ABOUT ME 自我介绍"><img src="assets/about-minmin.png" alt="ABOUT ME：张珉源，平面视觉设计专业背景，AIGC 一期训练营第三名，HAPSODE AIGC 项目已交付，目前从事千川剪辑与 Clipo 测试。" /><a href="#performance" class="about-next">CONTINUE / PERFORMANCE ↓</a></section>
+
+    <section id="performance" class="performance section-dark section-pad"><div class="section-kicker"><span>01 / PERFORMANCE</span><span>AI OUTPUT × BUSINESS RESULTS</span></div><h2 class="section-display">PER<span>FORM</span>ANCE</h2><div class="performance-grid"><div class="output-card"><p class="micro-label">PRODUCTION CAPACITY</p><div class="big-num">15<span>+</span></div><div class="num-caption">VIDEOS / DAY</div><div class="output-split"><div><strong>13</strong><span>LIVE 类素材</span></div><div><strong>02</strong><span>创意视频</span></div></div><p class="card-foot">高峰单日产出 20 条；常规手工信息流剪辑约 5 条/日（个人实践对比）</p></div><div class="result-card"><div class="result-heading">BUSINESS<br><span>RESULTS</span></div><p>在修红精华、双管洁面账户的实际测试中，AIGC 素材展现了可用于投放的表现。</p><div class="metric-row"><div><strong>+1–3%</strong><small>点击率高于账户常规素材的区间表现</small></div><div><strong>≈</strong><small>净成交 ROI 与账户整体水平基本持平</small></div></div><div class="evidence"><img src="assets/performance-proof.jpg" alt="汇报原稿中的投放结果页" loading="lazy"><button class="proof-toggle" data-proof="performance-proof">查看原始数据页 ＋</button></div></div></div><div class="metric-note">注：指标对应上传汇报中的项目测试结果，不代表全部素材的统一表现。</div></section>
+
+    <section id="creative" class="creative section-lime section-pad"><div class="section-kicker dark"><span>02 / CREATIVE</span><span>SELECTED WORKS · CLICK TO PLAY</span></div><div class="creative-title"><h2>CREATIVE<span>.</span></h2><p>五支独立制作 / 参与制作的 AIGC 视频样片<br>点击封面，直接观看完整视频。</p></div><div class="filter-bar" aria-label="作品筛选"><button class="filter active" data-filter="all">ALL WORKS <b>05</b></button><button class="filter" data-filter="story">STORY / CHARACTER</button><button class="filter" data-filter="product">PRODUCT / LIVE</button></div>
+      <div class="video-grid" id="video-grid">
+        <button class="video-card tall" data-index="0" data-kind="story" aria-label="播放角色视觉实验视频"><span class="thumb"><img src="assets/creative-01.jpg" alt="妆造角色短片封面" loading="lazy"><i class="play-icon">▶</i></span><span class="video-info"><b>01 / CHARACTER</b><span>角色视觉实验</span><small>00:15 · AIGC VIDEO</small></span></button>
+        <button class="video-card" data-index="1" data-kind="product" aria-label="播放产品视觉特写视频"><span class="thumb"><img src="assets/creative-02.jpg" alt="卸妆膏产品特写封面" loading="lazy"><i class="play-icon">▶</i></span><span class="video-info"><b>02 / PRODUCT</b><span>产品质感实验</span><small>00:14 · PRODUCT FILM</small></span></button>
+        <button class="video-card" data-index="2" data-kind="story" aria-label="播放双猫创意视频"><span class="thumb"><img src="assets/creative-03.jpg" alt="双猫与 HAPSODE 产品封面" loading="lazy"><i class="play-icon">▶</i></span><span class="video-info"><b>03 / CAT × PRODUCT</b><span>双猫创意短片</span><small>00:15 · AIGC VIDEO</small></span></button>
+        <button class="video-card" data-index="3" data-kind="product" aria-label="播放猫咪产品创意视频"><span class="thumb"><img src="assets/creative-04.jpg" alt="猫咪与卸妆膏产品的创意画面" loading="lazy"><i class="play-icon">▶</i></span><span class="video-info"><b>04 / LIVE CREATIVE</b><span>猫咪产品创意</span><small>00:15 · AIGC VIDEO</small></span></button>
+        <button class="video-card" data-index="4" data-kind="story" aria-label="播放童话叙事视频"><span class="thumb"><img src="assets/creative-05.jpg" alt="童话人物叙事短片封面" loading="lazy"><i class="play-icon">▶</i></span><span class="video-info"><b>05 / STORY</b><span>童话叙事短片</span><small>00:15 · AIGC VIDEO</small></span></button>
+      </div><div class="creative-bottom"><span>REAL PROJECT VIDEOS / FIVE SELECTED WORKS</span><span>↑ CLICK ANY COVER TO VIEW</span></div></section>
+
+    <section id="workflow" class="workflow section-dark section-pad"><div class="section-kicker"><span>03 / WORKFLOW</span><span>SOP × SCALE</span></div><div class="workflow-head"><h2>REPEATABLE<br><span>WORKFLOW.</span></h2><p>从单条素材制作经验，沉淀为可复用的批量生产方法。</p></div><div class="steps"><div class="step"><b>01</b><h3>素材收集</h3><p>检索产品素材<br>拆解爆款参考</p></div><div class="step"><b>02</b><h3>文案适配</h3><p>复用有效文案结构<br>匹配产品卖点</p></div><div class="step"><b>03</b><h3>AI 生成</h3><p>构建画面与动态<br>批量生成素材</p></div><div class="step"><b>04</b><h3>视觉优化</h3><p>去除无关元素<br>校正产品细节</p></div><div class="step"><b>05</b><h3>成品交付</h3><p>检查质量与合规<br>标准化输出</p></div></div><div class="scale-line"><strong>SCALE.</strong><div><b>REUSE</b><span>复用有效文案与素材结构</span></div><div><b>EFFICIENCY</b><span>减少重复操作</span></div><div><b>CONSISTENCY</b><span>统一质量检查标准</span></div></div></section>
+
+    <section id="growth" class="growth section-lime section-pad"><div class="section-kicker dark"><span>04 / GROWTH</span><span>FROM VISUAL TO BUSINESS THINKING</span></div><h2>GROWTH<span> ≠ </span>THE END.</h2><div class="growth-dual"><div><span class="tiny">BEFORE / AIGC PRODUCTION</span><h3>VISUAL<br>EXPRESSION</h3><p>注重生成效率、视觉创意和规模化 SOP。</p></div><div><span class="tiny">NOW / QIANCHUAN EDITING</span><h3>BUSINESS<br>THINKING</h3><p>更多关注产品卖点、视频节奏与素材的实际投放场景。</p></div></div><div class="skill-ribbon"><span>STRUCTURE</span><span>RHYTHM</span><span>CONVERSION</span></div><div class="clipo"><div><div class="clipo-tag">TOOL FEEDBACK / CLIPO</div><h3>发现问题。<br>提出改进。</h3></div><div class="clipo-list"><p><b>WORKFLOW</b><span>关键词检索、素材预览与快速替换</span></p><p><b>MATERIAL</b><span>按人物数量与产品展示筛选素材</span></p><p><b>AUDIO</b><span>补充中文热门配音及投流背景音乐</span></p></div></div></section>
+
+    <section id="beyond" class="beyond section-dark section-pad"><div class="section-kicker"><span>05 / BEYOND</span><span>FUTURE PLANNING & PERSONAL VALUE</span></div><h2>WHAT’S<br><span>NEXT?</span></h2><div class="future-list"><div><b>DELIVER / 01</b><h3>夯实当前业务</h3><p>持续优化千川信息流剪辑，提升卖点提炼与素材判断能力。</p></div><div><b>OPTIMIZE / 02</b><h3>沉淀可复用方法</h3><p>完善 AIGC 与剪辑 SOP，将实践经验转化为可优化的工作流程。</p></div><div><b>EXPAND / 03</b><h3>拓展创意项目</h3><p>发挥视觉设计和 AIGC 能力，探索短片、互动作品与网站表达。</p></div></div><div class="value-equation"><span>MY VALUE / 个人价值</span><strong>视觉审美 <i>+</i> AI 内容生产 <i>+</i> 电商内容理解</strong><em>复合型创意能力</em></div></section>
+    <section class="end-screen"><span>THANK YOU</span><h2>BEYOND THE<br>PROMPT.</h2><div><b>minmin</b><span>张珉源 / 2026</span><a href="#top">BACK TO TOP ↑</a></div></section>
+  </main>
+  <dialog id="video-dialog" aria-label="视频播放器"><div class="dialog-inner"><div class="dialog-bar"><div><span class="dialog-eyebrow">CREATIVE / SELECTED WORK</span><h3 id="dialog-title">VIDEO</h3></div><button id="video-close" aria-label="关闭视频">CLOSE ×</button></div><video id="modal-video" controls playsinline preload="metadata"></video><div class="dialog-footer"><button id="prev-video">PREVIOUS</button><span id="video-count">01 / 05</span><button id="next-video">NEXT VIDEO</button></div></div></dialog>
+</body></html>
